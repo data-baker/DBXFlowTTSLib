@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DBXFlowTTSLib'
-  s.version          = '2.2.2'
+  s.version          = '2.2.3'
   s.summary          = '语音合成'
   s.description      = <<-DESC
 流式语音合成iOSSDK，此库依赖于DBCommonLib
