@@ -22,7 +22,7 @@ pod 'DBXFlowTTSLib'
 
 ## Author
 
-linxi, linxi@data-baker.com
+李明辉, liminghui@data-baker.com
 
 ## License
 

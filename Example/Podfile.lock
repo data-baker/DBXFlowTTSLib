@@ -1,16 +1,20 @@
 PODS:
-  - DBXFlowTTSLib (0.1.0)
+  - DBCommonLib (2.2.3)
+  - DBXFlowTTSLib (2.2.4):
+    - DBCommonLib (~> 2.2.3)
 
 DEPENDENCIES:
-  - DBXFlowTTSLib (from `../`)
+  - DBXFlowTTSLib (~> 2.2.4)
 
-EXTERNAL SOURCES:
-  DBXFlowTTSLib:
-    :path: "../"
+SPEC REPOS:
+  trunk:
+    - DBCommonLib
+    - DBXFlowTTSLib
 
 SPEC CHECKSUMS:
-  DBXFlowTTSLib: 37145f781f5d65c8aef91a5d41e77e9fd1764ff6
+  DBCommonLib: 0541e78e7f6e0f52b6d2dc809fa15cfccf691f78
+  DBXFlowTTSLib: 85d0276caa28514e89baad5b38ee64d10b085b91
 
-PODFILE CHECKSUM: 2084dc5333dbccc0fdaa9eb19046432386f50382
+PODFILE CHECKSUM: 6925b0e251ddbbcc51cd56d7f2c588ef5cd4e283
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

@@ -1,6 +1,0 @@
-framework module DBXFlowTTSLib {
-  umbrella header "DBXFlowTTSLib-umbrella.h"
-
-  export *
-  module * { export * }
-}

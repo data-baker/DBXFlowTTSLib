@@ -1,6 +1,16 @@
-use_frameworks!
-target 'DBXFlowTTSLib_Tests' do
-  pod 'DBXFlowTTSLib', :path => '../'
-  
-  
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DBXFlowTTSDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  #use_frameworks!
+  pod 'DBXFlowTTSLib', '~> 2.2.4'
+
+
+  # Pods for DBXFlowTTSDemo
+
+  target 'DBXFlowTTSDemoUITests' do
+    # Pods for testing
+  end
+
 end
