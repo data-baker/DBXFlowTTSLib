@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DBXFlowTTSLib'
-  s.version          = '2.2.4'
+  s.version          = '2.2.5'
   s.summary          = '语音合成'
   s.description      = <<-DESC
 流式语音合成iOSSDK，此库依赖于DBCommonLib
@@ -12,6 +12,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   # s.source_files = 'DBXFlowTTSLib/Classes/**/*'
   s.vendored_frameworks   = 'DBXFlowTTSLib/Classes/*.framework'
-  s.dependency 'DBCommonLib','~>2.2.3'
+  s.dependency 'DBCommonLib','~>2.2.5'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
 
