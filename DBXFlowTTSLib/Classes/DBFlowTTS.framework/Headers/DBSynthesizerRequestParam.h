@@ -19,12 +19,6 @@ typedef NS_ENUM(NSUInteger, DBTTSRate) {
     DBTTSRate8k = 1,
     DBTTSRate16k,
 };
-
-typedef NS_ENUM(NSUInteger,DBlanguageType) {
-    DBlanguageTypeChinese, // 中文
-    DBlanguageTypeEnglish // 英文
-};
-
 @interface DBSynthesizerRequestParam : NSObject
 
 /// 根据接口获取到的token
@@ -36,8 +30,8 @@ typedef NS_ENUM(NSUInteger,DBlanguageType) {
 /// 设置要转为语音的合成文本
 @property(nonatomic,copy)NSString * text;
 
-/// 合成请求文本的语言，目前支持ZH(中文和中英混)和ENG(纯英文，中文部分不会合成),默认：ZH
-@property(nonatomic,assign)DBlanguageType language;
+/// 合成请求文本的语言，目前支持ZH(中文和中英混)和ENG(纯英文，中文部分不会合成),默认：ZH,更多音色参考官网
+@property(nonatomic,copy)NSString * language;
 
 /// 设置播放的语速，在0～9之间（支持浮点值），不传时默认为5
 @property(nonatomic,copy)NSString * speed;
